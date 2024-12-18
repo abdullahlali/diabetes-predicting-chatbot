@@ -160,6 +160,7 @@ def chatbot(chatbot_name, user_name):
     # Evaluate the model
     X_train_vectors = vectorizer.transform(X_train)
     train_accuracy = model.score(X_train_vectors, y_train)
+    # print("Model Accuracy: {:.2f}".format(train_accuracy))
     
     print(chatbot_name + ": Hello " + user_name + "! I'm here to help you with any questions you have about diabetes. Whether it's about symptoms, treatments, prevention, or lifestyle tips—just ask, and I'll do my best to provide the answers you need!\n")
 
